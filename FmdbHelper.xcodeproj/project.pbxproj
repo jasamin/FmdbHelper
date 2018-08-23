@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		758EF5AC4A502513BA805873 /* libPods-FmdbHelper.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EDF731C0F10399B6B9F9909 /* libPods-FmdbHelper.a */; };
 		E052AE22212D61D200D4F4B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E052AE21212D61D200D4F4B0 /* AppDelegate.m */; };
 		E052AE25212D61D200D4F4B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E052AE24212D61D200D4F4B0 /* ViewController.m */; };
 		E052AE28212D61D200D4F4B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E052AE26212D61D200D4F4B0 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 		E052AE30212D61E000D4F4B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E052AE2F212D61E000D4F4B0 /* main.m */; };
 		E052AE3A212D61E100D4F4B0 /* FmdbHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E052AE39212D61E100D4F4B0 /* FmdbHelperTests.m */; };
 		E052AE45212D61E100D4F4B0 /* FmdbHelperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E052AE44212D61E100D4F4B0 /* FmdbHelperUITests.m */; };
+		E052AE57212D61F100D4F4B0 /* CVFmdbHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E052AE54212D61F100D4F4B0 /* CVFmdbHelper.m */; };
+		E052AE58212D61F100D4F4B0 /* CVGetIvarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E052AE56212D61F100D4F4B0 /* CVGetIvarModel.m */; };
+		E052AE5B212D622A00D4F4B0 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E052AE59212D622A00D4F4B0 /* TestModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		35B40A3E242A42BEA2C30B35 /* Pods-FmdbHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FmdbHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FmdbHelper/Pods-FmdbHelper.debug.xcconfig"; sourceTree = "<group>"; };
+		6EDF731C0F10399B6B9F9909 /* libPods-FmdbHelper.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FmdbHelper.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A3E31DEEBC97DE58DC4B215 /* Pods-FmdbHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FmdbHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-FmdbHelper/Pods-FmdbHelper.release.xcconfig"; sourceTree = "<group>"; };
 		E052AE1D212D61D200D4F4B0 /* FmdbHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FmdbHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E052AE20212D61D200D4F4B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E052AE21212D61D200D4F4B0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +58,12 @@
 		E052AE40212D61E100D4F4B0 /* FmdbHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FmdbHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E052AE44212D61E100D4F4B0 /* FmdbHelperUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FmdbHelperUITests.m; sourceTree = "<group>"; };
 		E052AE46212D61E100D4F4B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E052AE53212D61F100D4F4B0 /* CVFmdbHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVFmdbHelper.h; sourceTree = "<group>"; };
+		E052AE54212D61F100D4F4B0 /* CVFmdbHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVFmdbHelper.m; sourceTree = "<group>"; };
+		E052AE55212D61F100D4F4B0 /* CVGetIvarModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVGetIvarModel.h; sourceTree = "<group>"; };
+		E052AE56212D61F100D4F4B0 /* CVGetIvarModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CVGetIvarModel.m; sourceTree = "<group>"; };
+		E052AE59212D622A00D4F4B0 /* TestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
+		E052AE5A212D622A00D4F4B0 /* TestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				758EF5AC4A502513BA805873 /* libPods-FmdbHelper.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +92,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27F2A461A2735660068A88C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35B40A3E242A42BEA2C30B35 /* Pods-FmdbHelper.debug.xcconfig */,
+				9A3E31DEEBC97DE58DC4B215 /* Pods-FmdbHelper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B45F7DDDA623B4D6E2B79D67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EDF731C0F10399B6B9F9909 /* libPods-FmdbHelper.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E052AE14212D61D200D4F4B0 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +116,8 @@
 				E052AE38212D61E100D4F4B0 /* FmdbHelperTests */,
 				E052AE43212D61E100D4F4B0 /* FmdbHelperUITests */,
 				E052AE1E212D61D200D4F4B0 /* Products */,
+				27F2A461A2735660068A88C9 /* Pods */,
+				B45F7DDDA623B4D6E2B79D67 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +134,13 @@
 		E052AE1F212D61D200D4F4B0 /* FmdbHelper */ = {
 			isa = PBXGroup;
 			children = (
+				E052AE52212D61F100D4F4B0 /* CVFmdbHelper */,
 				E052AE20212D61D200D4F4B0 /* AppDelegate.h */,
 				E052AE21212D61D200D4F4B0 /* AppDelegate.m */,
 				E052AE23212D61D200D4F4B0 /* ViewController.h */,
 				E052AE24212D61D200D4F4B0 /* ViewController.m */,
+				E052AE5A212D622A00D4F4B0 /* TestModel.h */,
+				E052AE59212D622A00D4F4B0 /* TestModel.m */,
 				E052AE26212D61D200D4F4B0 /* Main.storyboard */,
 				E052AE29212D61E000D4F4B0 /* Assets.xcassets */,
 				E052AE2B212D61E000D4F4B0 /* LaunchScreen.storyboard */,
@@ -132,6 +168,17 @@
 			path = FmdbHelperUITests;
 			sourceTree = "<group>";
 		};
+		E052AE52212D61F100D4F4B0 /* CVFmdbHelper */ = {
+			isa = PBXGroup;
+			children = (
+				E052AE53212D61F100D4F4B0 /* CVFmdbHelper.h */,
+				E052AE54212D61F100D4F4B0 /* CVFmdbHelper.m */,
+				E052AE55212D61F100D4F4B0 /* CVGetIvarModel.h */,
+				E052AE56212D61F100D4F4B0 /* CVGetIvarModel.m */,
+			);
+			path = CVFmdbHelper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +186,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E052AE49212D61E100D4F4B0 /* Build configuration list for PBXNativeTarget "FmdbHelper" */;
 			buildPhases = (
+				09813677586F662A67E2B390 /* [CP] Check Pods Manifest.lock */,
 				E052AE19212D61D200D4F4B0 /* Sources */,
 				E052AE1A212D61D200D4F4B0 /* Frameworks */,
 				E052AE1B212D61D200D4F4B0 /* Resources */,
@@ -257,6 +305,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		09813677586F662A67E2B390 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FmdbHelper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E052AE19212D61D200D4F4B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -265,6 +334,9 @@
 				E052AE25212D61D200D4F4B0 /* ViewController.m in Sources */,
 				E052AE30212D61E000D4F4B0 /* main.m in Sources */,
 				E052AE22212D61D200D4F4B0 /* AppDelegate.m in Sources */,
+				E052AE5B212D622A00D4F4B0 /* TestModel.m in Sources */,
+				E052AE58212D61F100D4F4B0 /* CVGetIvarModel.m in Sources */,
+				E052AE57212D61F100D4F4B0 /* CVFmdbHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +503,7 @@
 		};
 		E052AE4A212D61E100D4F4B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35B40A3E242A42BEA2C30B35 /* Pods-FmdbHelper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +520,7 @@
 		};
 		E052AE4B212D61E100D4F4B0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A3E31DEEBC97DE58DC4B215 /* Pods-FmdbHelper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
