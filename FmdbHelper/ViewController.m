@@ -48,7 +48,7 @@
     
     TestModel *modeltest = [[TestModel alloc]init];
     NSArray *nameArr = [CVGetIvarModel getClassPropertyName:[TestModel class]];
-    for (NSInteger i = 0; i<300; i++) {
+    for (NSInteger i = 0; i<50000; i++) {
         
         int last = arc4random() % lastNames.count;
         int give = arc4random() % giveNames.count;
@@ -57,6 +57,7 @@
         modeltest.age = [NSString stringWithFormat:@"%d",arc4random()%30];
         modeltest.hobit = @"打波波";
         modeltest.gender = @"man";
+        modeltest.idStr = [NSString stringWithFormat:@"%ld",i];
         NSArray *valueArr = [CVGetIvarModel getPropertyValue:modeltest names:nameArr];
         [model addValueIntoTable:STUDENT vaules:valueArr];
     }
@@ -83,6 +84,8 @@
     }];
     
     
+}
+- (IBAction)slieder:(id)sender {
 }
 
 - (void)didReceiveMemoryWarning {

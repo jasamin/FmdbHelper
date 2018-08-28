@@ -13,4 +13,5 @@
 @property (copy,nonatomic) NSString *age;
 @property (copy,nonatomic) NSString *hobit;
 @property (copy,nonatomic) NSString *gender;
+@property (copy,nonatomic) NSString *idStr;
 @end

@@ -89,11 +89,11 @@ static CVFmdbHelper *dbmodel = nil;
 #pragma mark - 增
 
 - (void)addValueIntoTable:(NSString *)tableName vaules:(NSArray *)vaules {
+    
     FMDatabase *db = dbmodel.db;
     if(![db open]){
         return;
     }
-    
     NSString *updateStr = [NSString stringWithFormat:@"insert into %@ values(",tableName];
     for (NSInteger i = 0;i<vaules.count;i++) {
         updateStr = [updateStr stringByAppendingString:@"?,"];
@@ -106,7 +106,9 @@ static CVFmdbHelper *dbmodel = nil;
     }else {
         NSLog(@"添加成功");
     }
+
     [db close];
+    
 }
 
 
@@ -180,6 +182,16 @@ static CVFmdbHelper *dbmodel = nil;
 
 - (void)findDataFromTable:(NSString *)tableName whereKey:(NSString *)key like:(NSString *)value result:(resultBlock)resultArr  {
     NSString *sql = [NSString stringWithFormat:@"SELECT * FROM %@ WHERE %@ LIKE \'%%%@%%\'",tableName,key,value];
+    resultArr([self dealResultset:sql]);
+}
+
+- (void)findDataFromTable:(NSString *)tableName whereKey:(NSString *)key hasPrefix:(NSString *)value result:(resultBlock)resultArr  {
+    NSString *sql = [NSString stringWithFormat:@"SELECT * FROM %@ WHERE %@ LIKE \'%@%%\'",tableName,key,value];
+    resultArr([self dealResultset:sql]);
+}
+
+- (void)findDataFromTable:(NSString *)tableName whereKey:(NSString *)key hasSuffix:(NSString *)value result:(resultBlock)resultArr  {
+    NSString *sql = [NSString stringWithFormat:@"SELECT * FROM %@ WHERE %@ LIKE \'%%%@\'",tableName,key,value];
     resultArr([self dealResultset:sql]);
 }
 

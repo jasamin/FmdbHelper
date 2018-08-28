@@ -66,6 +66,26 @@ typedef void(^succeeded)(BOOL suc);
 - (void)findDataFromTable:(NSString *)tableName whereKey:(NSString *)key like:(NSString *)value result:(resultBlock)resultArr;
 
 /**
+ 查询表中键以value字符开头的所有数据
+ 
+ @param tableName 表名称
+ @param key 键名称
+ @param value 值
+ @param resultArr 查找到的数据字典数组
+ */
+- (void)findDataFromTable:(NSString *)tableName whereKey:(NSString *)key hasPrefix:(NSString *)value result:(resultBlock)resultArr;
+
+/**
+ 查询表中键以value字符结尾的所有数据
+
+ @param tableName 表名称
+ @param key 键名称
+ @param value 值
+ @param resultArr 查找到的数据字典数组
+ */
+- (void)findDataFromTable:(NSString *)tableName whereKey:(NSString *)key hasSuffix:(NSString *)value result:(resultBlock)resultArr;
+
+/**
  更新表中某个键的数据
  
  @param tableName 表名称
